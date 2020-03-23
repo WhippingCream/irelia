@@ -1,9 +1,7 @@
-FROM node:12
+FROM enterkeywasremoved/irelia:base
 
-# Bundle APP files
 COPY . .
 
-# Install app dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
 RUN npm install
 

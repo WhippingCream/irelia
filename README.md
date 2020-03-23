@@ -5,9 +5,16 @@ Docker Deployment Discord bot
 ## Getting Started
 
 ```text
+docker run -it -d -v /var/run/docker.sock:/var/run/docker.sock --rm enterkeywasremoved/irelia
+```
+
+```text
 npm install
 npm run-script start
 ```
+
+## Docker Repository
+https://hub.docker.com/repository/docker/enterkeywasremoved/irelia
 
 ## Issue list
 
