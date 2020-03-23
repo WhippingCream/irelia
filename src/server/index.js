@@ -3,6 +3,7 @@ const Discord = require('discord.js'); //Discord.JS 모듈을 불러오고,
 const { spawn } = require('child_process');
 
 const client = new Discord.Client(); //client 생성,
+var token = '';
 
 client.on('ready', () => { //이벤트 리스너 (봇이 준비되었을 때)
   logger.info(`Logged in as ${client.user.tag}!`);
@@ -16,4 +17,4 @@ client.on('message', (msg) => { //이벤트 리스너 (봇에 메세지가 올 �
 
 });
 
-client.login('NjkwMTYxNzc2MDEyNDI3Mjcw.Xncsfg.XOsS6VGo9EbB7cjlyXqQG8UrIp8'); //'token' 으로 봇(클라이언트)이 로그인
+client.login(token); //'token' 으로 봇(클라이언트)이 로그인
