@@ -7,4 +7,4 @@ FROM docker:stable
 # Installing libuv (1.34.0-r0)
 # Installing nodejs (12.15.0-r1)
 # Installing npm (12.15.0-r1)
-RUN apk add --update nodejs npm
+RUN [ "sh", "-c", "apk add --update nodejs npm"]
