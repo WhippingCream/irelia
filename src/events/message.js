@@ -10,6 +10,14 @@ module.exports = async message => {
     
 	let command = message.content.split(' ')[0].slice(prefix.length);
 	let params = message.content.split(' ').slice(1);
+    
+	let cmd;
+	if (client.commands.has(command)) {
+		cmd = client.commands.get(command);
+	}
 
-	logger.info(command + ' ' + params);
+	if (cmd) {
+		cmd.run(client, message, params);
+		logger.info("Command: /" + cmd.help.name + "Params: " + params);
+	}
 };
