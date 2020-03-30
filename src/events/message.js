@@ -18,6 +18,6 @@ module.exports = async message => {
 
 	if (cmd) {
 		cmd.run(client, message, params);
-		logger.info("Command: /" + cmd.help.name + "Params: " + params);
+		logger.info("Command: /" + cmd.help.name + ", " + "Params: " + params);
 	}
 };

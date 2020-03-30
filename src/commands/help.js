@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const fs = require('fs')
 exports.run = (client, message, args) => {
 	if(!args[0]){
 		return message.channel.send("```" + `\n` + "Description: " + this.help.description + `\n` + "Usage: " + this.help.usage + "```")
